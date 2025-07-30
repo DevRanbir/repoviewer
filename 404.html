@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // List of common typos and their corrections
+    const typoCorrections = {
+      'devranvbir': 'devranbir',
+      'devranber': 'devranbir',
+      // Add more variations as needed
+    };
+
+    function redirectToCorrectUrl() {
+      const currentPath = window.location.pathname.toLowerCase();
+      const hostname = window.location.hostname.toLowerCase();
+
+      // Check for typos in the hostname
+      for (const [typo, correction] of Object.entries(typoCorrections)) {
+        if (hostname.includes(typo)) {
+          window.location.href = `https://${correction}.github.io${currentPath}`;
+          return;
+        }
+      }
+
+      // If no typo found, redirect to the main page
+      window.location.href = 'https://devranbir.github.io';
+    }
+
+    redirectToCorrectUrl();
+  </script>
+</head>
+<body>
+  <p>Redirecting to the correct page...</p>
+</body>
+</html>

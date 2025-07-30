@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/repoviewer/static/css/main.d51d23b7.css",
+    "main.js": "/repoviewer/static/js/main.bcb53f74.js",
+    "static/js/453.7546dd5e.chunk.js": "/repoviewer/static/js/453.7546dd5e.chunk.js",
+    "index.html": "/repoviewer/index.html",
+    "main.d51d23b7.css.map": "/repoviewer/static/css/main.d51d23b7.css.map",
+    "main.bcb53f74.js.map": "/repoviewer/static/js/main.bcb53f74.js.map",
+    "453.7546dd5e.chunk.js.map": "/repoviewer/static/js/453.7546dd5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d51d23b7.css",
+    "static/js/main.bcb53f74.js"
+  ]
+}
