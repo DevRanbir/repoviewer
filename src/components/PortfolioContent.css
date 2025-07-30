@@ -1,0 +1,162 @@
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .tabs {
+    display: flex;
+    position: relative;
+    background-color: var(--background-light);
+    border-bottom: 1px solid var(--primary-light);
+    padding: 0 1rem;
+  }
+  
+  .tab {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    z-index: 2;
+  }
+  
+  .tab:hover {
+    color: var(--primary-color);
+  }
+  
+  .tab.active {
+    color: var(--primary-color);
+  }
+  
+  .tab-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: left 0.3s ease, width 0.3s ease;
+  }
+  
+  .tab-content {
+    flex: 1;
+    overflow: auto;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--background-main);
+  }
+  
+  /* Increase contrast for potential white text */
+  .readme-content h1,
+  .readme-content h2,
+  .readme-content h3,
+  .readme-content h4,
+  .readme-content h5,
+  .readme-content h6 {
+    color: var(--text-dark);
+  }
+  
+  .readme-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .readme-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .readme-content pre {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border: 1px solid var(--primary-light);
+  }
+  
+  .readme-content code {
+    background-color: var(--background-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9em;
+    color: var(--text-dark);
+  }
+  
+  .readme-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .readme-content table th,
+  .readme-content table td {
+    border: 1px solid var(--primary-light);
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .readme-content table th {
+    background-color: var(--background-light);
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .readme-content blockquote {
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  .readme-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+  }
+  
+  .readme-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 300px;
+  }
+  
+  .readme-error {
+    background-color: #fff5f5;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #e53e3e;
+  }
+  
+  /* Additional styles for better visibility */
+  .readme-content {
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  .readme-content hr {
+    border: none;
+    border-top: 1px solid var(--primary-light);
+    margin: 1.5rem 0;
+  }
+  
+  .readme-content ul,
+  .readme-content ol {
+    padding-left: 1.5rem;
+  }
+  
+  .readme-content ul li,
+  .readme-content ol li {
+    margin-bottom: 0.5rem;
+  }
